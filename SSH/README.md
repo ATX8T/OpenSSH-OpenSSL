@@ -46,12 +46,11 @@
   ```
 
 - 使用FinalShell➕密钥登录
-- ![描述](./img/image.png)
-- ![替代文本](https://raw.githubusercontent.com/ATX8T/SSH/main/img/image.png)
+- ![使用FinalShell➕密钥登录](./img/image.png)
+- ![使用FinalShell➕密钥登录](./img/image (1).png)
 
-- ![替代文本](https://raw.githubusercontent.com/ATX8T/SSH/main/img/image%20(1).png)
 
-- 
+
 
 ## FinalShell内root连接命令
 
@@ -92,24 +91,6 @@ rm ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
 
 
 # README.md 中显示图片操作
+- 使用相对路径实现，需要注意相对路径写法规则。
+- 使用相对路径方便在移动或者迁移到其他仓库中或者是本地都可以正常显示
 
-- 将图片上传到GitHub 仓库中。点击“Add file”按钮，右键点击图片，选择“复制图片地址”或“复制链接地址”，这样你就得到了图片的 URL。
-
-- 或者直接查看图片
-
-- 有中文名图片要使用右键地址
-
-- 原地址：https://github.com/ATX8T/SSH/blob/main/img/03122915.png
-
-- 修改后只要：/ATX8T/SSH/main/img/03122915.png   删除blob与https://github.com
-
-- 组合到：https://raw.githubusercontent.com/中去
-
-  ```
-  原地址：
-  https://github.com/ATX8T/SSH/blob/main/img/03122915.png
-  组合
-  ![替代文本](https://raw.githubusercontent.com/ATX8T/SSH/main/img/03122915.png)
-  ```
-
-![替代文本](https://raw.githubusercontent.com/ATX8T/SSH/main/img/03122915.png)
