@@ -5,22 +5,27 @@ OpenSSL 与 OpenSSH 生成脚本
 - ⚠️需要注意服务器能不能连接到GitHub
 - ⚠️登录执行前检查当前登录的用户是否有权限
 - 下载到本地使用 chmod +x 赋予权限
+  
+### SSH生成
 ```
-SSH
 ssh_configure.sh
 创建root用户
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
+4096位
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure20.sh)
+
 删除并创建root用户
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/delete_and_regenerate_ssh.sh)
 
-生成OpenSSL
+```
+
+### 生成OpenSSL
+```
 SSL
-bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/OpenSSLkey3.sh)
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/openssl2048.sh)
 
 4096位ssl
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/openssl4096.sh)
-
-
 ```
 
 ## OpenSSL
