@@ -17,6 +17,10 @@ bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/dele
 SSL
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/OpenSSLkey3.sh)
 
+4096位ssl
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/openssl4096.sh)
+
+
 ```
 
 ## OpenSSL
