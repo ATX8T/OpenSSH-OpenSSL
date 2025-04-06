@@ -31,6 +31,8 @@ bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/open
 4096位ssl，PEM/CRT双格式
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/openssl4096X2.sh)
 
+浏览器默认不信任自签名证书，即便安装到本地，仍会标记不安全。因为自签名证书没有权威证书颁发机构（CA）背书。
+
 ```
 
 ## OpenSSL
