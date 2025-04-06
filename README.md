@@ -12,7 +12,7 @@ ssh_configure.sh
 创建root用户
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
 4096位
-bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure20.sh)
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure4096.sh)
 
 删除并创建root用户
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/delete_and_regenerate_ssh.sh)
