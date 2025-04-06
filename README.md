@@ -1,6 +1,24 @@
 # OpenSSH-OpenSSL
 OpenSSL 与 OpenSSH 生成脚本
 
+## 拉取地址
+- 需要注意服务器能不能连接到GitHub
+```
+SSH
+ssh_configure.sh
+创建root用户
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
+删除并创建root用户
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/delete_and_regenerate_ssh.sh)
+
+生成OpenSSL
+SSL
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
+
+ 或者
+sudo bash <(curl -s bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
+```
+
 ## OpenSSL
 - OpenSSLkey3.sh  主要用于OpenSSL自签证书生成
   - 有ssl验证功能
@@ -27,23 +45,9 @@ OpenSSL 与 OpenSSH 生成脚本
 - **去掉源连接里面的 blob与https://github.com**
 - 组合到：https://raw.githubusercontent.com 里面
 - 最终:https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh
-  
-```
-SSH
-ssh_configure.sh
-创建root用户
-bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
-删除并创建root用户
-bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/delete_and_regenerate_ssh.sh)
-
-生成OpenSSL
-SSL
-bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
 
 
- 或者
-sudo bash <(curl -s bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
-```
+
 
 - 空行测试
 <br></br>
