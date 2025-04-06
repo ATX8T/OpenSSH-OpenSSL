@@ -46,8 +46,8 @@ sudo bash <(curl -s bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenS
 ```
 
 
--
--
+
+        
 
 # 测试一下显示图片
 ![测试一下显示图片](./SSH/img/haha/niuh1.png)
