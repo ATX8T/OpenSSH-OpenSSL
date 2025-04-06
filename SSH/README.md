@@ -35,16 +35,16 @@
     ssh -i "F:\IM\ls\id_rsa" root@170.106.110.14
   ```
 - 使用FinalShell➕密钥登录
-- ![替代文本](https://raw.githubusercontent.com/ATX8T/SSH/main/img/image.png)
-- ![替代文本](https://raw.githubusercontent.com/ATX8T/SSH/main/img/image%20(1).png)
+- ![替代文本](https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/img/image.png)
+- ![替代文本](https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/img/image%20(1).png)
 - 
 ## FinalShell内root连接命令
 ```
-bash <(curl -s https://raw.githubusercontent.com/ATX8T/SSH/main/ssh_configure.sh)
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
 
 原地址  直接在浏览器中查看github的ssh_configure.sh文件获取地址然后修改
 
-https://github.com/ATX8T/SSH/blob/main/ssh_configure.sh
+https://github.com/ATX8T/OpenSSH-OpenSSL/blob/main/ssh_configure.sh
 ```
 
 ## 连接成功后删除服务器私钥
@@ -77,14 +77,14 @@ rm ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
 - 将图片上传到GitHub 仓库中。点击“Add file”按钮，右键点击图片，选择“复制图片地址”或“复制链接地址”，这样你就得到了图片的 URL。
 - 或者直接查看图片
 - 有中文名图片要使用右键地址
-- 原地址：https://github.com/ATX8T/SSH/blob/main/img/03122915.png
-- 修改后只要：/ATX8T/SSH/main/img/03122915.png   删除blob与https://github.com
+- 原地址：https://github.com/ATX8T/OpenSSH-OpenSSL/blob/main/img/03122915.png
+- 修改后只要：/ATX8T/OpenSSH-OpenSSL/main/img/03122915.png   删除blob与https://github.com
 - 组合到：https://raw.githubusercontent.com/中去
   ```
   原地址：
-  https://github.com/ATX8T/SSH/blob/main/img/03122915.png
+  https://github.com/ATX8T/OpenSSH-OpenSSL/blob/main/img/03122915.png
   组合
-  ![替代文本](https://raw.githubusercontent.com/ATX8T/SSH/main/img/03122915.png)
+  ![替代文本](https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/img/03122915.png)
   ```
   
 ![替代文本](https://raw.githubusercontent.com/ATX8T/SSH/main/img/03122915.png)
