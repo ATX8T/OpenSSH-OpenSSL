@@ -26,6 +26,11 @@ bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/open
 
 4096位ssl
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/openssl4096.sh)
+
+
+4096位ssl，PEM/CRT双格式
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/openssl4096X2.sh)
+
 ```
 
 ## OpenSSL
