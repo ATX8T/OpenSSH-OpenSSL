@@ -2,7 +2,9 @@
 OpenSSL 与 OpenSSH 生成脚本
 
 ## 拉取地址
-- 需要注意服务器能不能连接到GitHub
+- ⚠️需要注意服务器能不能连接到GitHub
+- ⚠️登录执行前检查当前登录的用户是否有权限
+- 下载到本地使用 chmod +x 赋予权限
 ```
 SSH
 ssh_configure.sh
