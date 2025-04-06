@@ -15,10 +15,8 @@ bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/dele
 
 生成OpenSSL
 SSL
-bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/OpenSSLkey3.sh)
 
- 或者
-sudo bash <(curl -s bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh)
 ```
 
 ## OpenSSL
