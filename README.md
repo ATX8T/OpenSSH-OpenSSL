@@ -18,6 +18,13 @@ bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/delete_and_regenerate_ssh.sh)
 
 ```
+### 生成OpenSSL 自签证书调试----实现浏览器信任
+```
+
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/OpenSSLOK.sh)
+
+```
+
 
 ### 生成OpenSSL
 ```
