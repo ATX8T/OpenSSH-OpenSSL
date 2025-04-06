@@ -21,13 +21,13 @@ OpenSSL 与 OpenSSH 生成脚本
     - **修改ssh配置文件，允许root和密钥登录**
     - 在命令行输出密钥，
     - 系统检测 → 安装SSH → 启动服务 → 生成密钥 → 配置公钥 → 修改SSH配置 → 重启服务 → 输出验证
-## 远程拉取并且执行
-- 直接在GitHub中编辑ssh_configure.sh中浏览器顶部获取https://github.com/ATX8T/OpenSSH-OpenSSL/blob/main/ssh_configure.sh
+## 远程拉取并且执行方法
+- 直接在GitHub中编辑ssh_configure.sh，在浏览器顶部获取https://github.com/ATX8T/OpenSSH-OpenSSL/blob/main/ssh_configure.sh 源地址
 - 源地址：https://github.com/ATX8T/OpenSSH-OpenSSL/blob/main/ssh_configure.sh
 - **去掉源连接里面的 blob与https://github.com**
 - 组合到：https://raw.githubusercontent.com 里面
-- https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh
-- 最终:
+- 最终:https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure.sh
+  
 ```
 SSH
 ssh_configure.sh
