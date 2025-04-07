@@ -19,6 +19,9 @@ bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/dele
 
 ```
 ### 生成OpenSSL ok版本 自签证书调试----实现浏览器信任
+```
+bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/OpenSSLOK.sh)
+```
 - 🤺多种格式生成，根证书，证书，密钥公钥等，后续再nginx中配置ssl 下载证书安装后测试，浏览器信任
 - ⚠️是自签名证书，浏览器可能会提示证书不安全，需要手动信任证书。客户端安装根证书与证书两个。
 - nginx配置记得改ip
