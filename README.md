@@ -18,13 +18,15 @@ bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/delete_and_regenerate_ssh.sh)
 
 ```
-### 生成OpenSSL 自签证书调试----实现浏览器信任
-- 多种格式生成，后续再nginx中配置ssl 下载证书安装后测试，浏览器信任
+### 生成OpenSSL ok版本 自签证书调试----实现浏览器信任
+- 多种格式生成，根证书，证书，密钥公钥等，后续再nginx中配置ssl 下载证书安装后测试，浏览器信任
+- ⚠️注意：如果生成的证书是自签名的，浏览器可能会提示证书不安全，需要手动信任证书。客户端安装根证书与证书两个。
+- nginx配置记得改ip
 ```
 去除CN，使用SAN 
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/OpenSSLOK.sh)
 
-使用宝塔安装nginx  添加下列配置块  **改IP**
+使用宝塔安装nginx  添加下列配置块  
     # 新增的 HTTPS server 块
     server {
         listen 443 ssl;
@@ -70,7 +72,7 @@ bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/Open
 ```
 
 
-### 生成OpenSSL
+### 生成OpenSSL 测试用
 ```
 SSL
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/openssl2048.sh)
