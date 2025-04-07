@@ -24,6 +24,49 @@ bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/dele
 去除CN，使用SAN 
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/OpenSSLOK.sh)
 
+使用宝塔安装nginx  添加下列配置块  **改IP**
+    # 新增的 HTTPS server 块
+    server {
+        listen 443 ssl;
+        server_name 170.106.98.243; # 请替换为你的实际域名
+
+        ssl_certificate /opt/SSL/ServerCertificate.crt;
+        ssl_certificate_key /opt/SSL/ServerPrivateKey.key;
+
+        ssl_protocols TLSv1.2 TLSv1.3;
+        ssl_ciphers HIGH:!aNULL:!MD5;
+        ssl_prefer_server_ciphers on;
+
+        root /www/wwwroot/your_site_root; # 请替换为你的网站根目录
+        index index.html index.htm index.php;
+
+        access_log /www/wwwlogs/https_access.log;
+        error_log /www/wwwlogs/https_error.log;
+
+        location / {
+            try_files $uri $uri/ /index.php?$query_string;
+        }
+
+        location ~ \.php$ {
+            fastcgi_pass 127.0.0.1:9000; # 请根据实际情况修改
+            fastcgi_index index.php;
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            include fastcgi_params;
+        }
+
+        location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$ {
+            expires 30d;
+        }
+
+        location ~ .*\.(js|css)?$ {
+            expires 12h;
+        }
+
+        location ~ /\. {
+            deny all;
+        }
+    }
+
 ```
 
 
