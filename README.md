@@ -21,7 +21,7 @@ bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/dele
 ### 生成OpenSSL 自签证书调试----实现浏览器信任
 - 多种格式生成，后续再nginx中配置ssl 下载证书安装后测试，浏览器信任
 ```
-
+去除CN，使用SAN 
 bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/OpenSSLOK.sh)
 
 ```

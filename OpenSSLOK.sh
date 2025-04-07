@@ -47,9 +47,6 @@ fi
 mkdir -p "$SSL_DIR"
 cd "$SSL_DIR"
 
-# 提示用户输入 CN
-read -p "请输入 Common Name (CN)域名或者服务器ip: " CN
-
 # 提示用户输入域名或 IP 地址，以逗号分隔
 read -p "请输入域名或 IP 地址（以逗号分隔，例如: example.com,www.example.com,192.168.1.1）: " DOMAINS
 
@@ -60,7 +57,7 @@ IFS=',' read -ra DOMAIN_ARRAY <<< "$DOMAINS"
 openssl genrsa -out "RootCaPrivateKey.key" 2048
 
 # 生成根证书
-openssl req -x509 -new -nodes -key "RootCaPrivateKey.key" -sha256 -days 3650 -out "RootCaCertificate.crt" -subj "/C=US/ST=State/L=City/O=Organization/OU=Unit/CN=RootCA"
+openssl req -x509 -new -nodes -key "RootCaPrivateKey.key" -sha256 -days 3650 -out "RootCaCertificate.crt" -subj "/C=US/ST=State/L=City/O=Organization/OU=Unit"
 
 # 复制根证书为 PEM 格式
 cp "RootCaCertificate.crt" "RootCaCertificate.pem"
@@ -83,7 +80,6 @@ ST = State
 L = City
 O = Organization
 OU = Unit
-CN = $CN
 
 [req_ext]
 subjectAltName = @alt_names
