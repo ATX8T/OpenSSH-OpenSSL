@@ -7,6 +7,17 @@ OpenSSL 与 OpenSSH 生成脚本
 - 下载到本地使用 chmod +x 赋予权限
   
 ### SSH生成
+## <span data-type="text" style="color: var(--b3-font-color9);">注意一定要用root权限执行脚本，不然怎么都连不上</span>
+
+先
+
+```ssh
+ubuntu@VM-0-14-ubuntu:~$ sudo -i
+root@VM-0-14-ubuntu:~# bash <(curl -s https://raw.githubusercontent.com/ATX8T/OpenSSH-OpenSSL/main/ssh_configure4096.sh)
+
+```
+
+
 ```
 ssh_configure.sh
 创建root用户
